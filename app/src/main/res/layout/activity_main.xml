@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:contentDescription="@string/black_hole"
+            android:src="@mipmap/black_hole" />
+
+        <TextView
+            style="@style/NameQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/black_hole_quiz_how_well_do_you_know_nature_s_weirdest_creations" />
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_0_enter_your_name" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="150dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="32dp"
+            android:background="@color/colorText"
+            android:textColor="@color/colorBackground" />
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_1_the_point_through_to_represent_the_center_of_a_black_hole_is_known_as" />
+
+        <RadioGroup
+            android:id="@+id/rg_1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button1_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infinitum" />
+
+            <RadioButton
+                android:id="@+id/button1_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/singularity" />
+
+            <RadioButton
+                android:id="@+id/button1_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/centrality" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_2_general_relativity_predicts_that_black_holes_have" />
+
+        <RadioGroup
+            android:id="@+id/rg_2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button2_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infinite_density" />
+
+            <RadioButton
+                android:id="@+id/button2_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infinite_mass" />
+
+            <RadioButton
+                android:id="@+id/button2_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/infinite_volume" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/when_stars_die_they_become_black_hole_if_they_have_masses_of_at_least" />
+
+        <RadioGroup
+            android:id="@+id/rg_3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button3_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/half_the_mass_of_the_sun" />
+
+            <RadioButton
+                android:id="@+id/button3_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/three_times_the_mass_of_the_sun" />
+
+            <RadioButton
+                android:id="@+id/button3_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twice_the_mass_of_the_sun" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_4_the_object_thought_to_be_a_supermassive_black_hole_at_the_centre_of_the_milky_way_galaxy_is_known_as" />
+
+        <RadioGroup
+            android:id="@+id/rg_4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button4_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/alpha_centauri" />
+
+            <RadioButton
+                android:id="@+id/button4_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sagittarius_a" />
+
+            <RadioButton
+                android:id="@+id/button4_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eta_carinae" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_5_quasars_are_distant_galaxies_whose_central_regions_are_thought_to_contain" />
+
+        <RadioGroup
+            android:id="@+id/rg_5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button5_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_supermassive_black_hole" />
+
+            <RadioButton
+                android:id="@+id/button5_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a_black_hole_that_is_both_supermassive_and_active" />
+
+            <RadioButton
+                android:id="@+id/button5_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/an_active_black_hole" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_6_the_event_horizon_of_a_black_hole_represents" />
+
+        <RadioGroup
+            android:id="@+id/rg_6"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp">
+
+            <RadioButton
+                android:id="@+id/button6_a"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/the_density_limit_of_a_black_hole" />
+
+            <RadioButton
+                android:id="@+id/button6_b"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/the_moment_when_the_black_hole_formed" />
+
+            <RadioButton
+                android:id="@+id/button6_c"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/the_boundary_beyond_which_nothing_can_escape" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_7_black_holes_can_be_described_by_three_and_only_three_simple_numbers" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/charge"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/charge" />
+
+            <CheckBox
+                android:id="@+id/hair"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/hair" />
+
+            <CheckBox
+                android:id="@+id/mass"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/mass" />
+
+            <CheckBox
+                android:id="@+id/spin"
+                style="@style/OptTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:onClick="onCheckboxClicked"
+                android:text="@string/spin" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/QuestionTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/_8_what_is_the_name_of_tunnels_in_spacetime_that_in_theory_can_allow_travel_anywhere_in_space_and_time_or_even_into_another_universe" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editTextQ"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="32dp"
+                android:background="@color/colorText"
+                android:focusable="true"
+                android:textColor="@color/colorBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:background="@color/colorText"
+                android:text="@string/confirm"
+                android:textColor="@color/colorBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@color/colorText"
+                android:text="@string/get_result"
+                android:textColor="@color/colorBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="32dp"
+                android:background="@color/colorText"
+                android:text="@string/try_again"
+                android:textColor="@color/colorBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</ScrollView>
